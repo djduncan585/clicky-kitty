@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Rothenburg Decorative";
+  src: url(rothenbg.ttf);
+}
+
+@font-face {
+  font-family: "Telegrama Raw";
+  src: url(telegrama_raw.otf);
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8d89c+1,6b6b51+100 */
+  background: #d8d89c; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #d8d89c 1%,
+    #6b6b51 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #d8d89c 1%,
+    #6b6b51 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d8d89c 1%,
+    #6b6b51 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#d8d89c",
+      endColorstr="#6b6b51",
+      GradientType=0
+    ); /* IE6-9 */
+}
+
+.master-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-container img {
+  object-fit: cover;
+}
+
+.blackletter {
+  font-family: "Rothenburg Decorative", script;
+  background-color: white;
+  color: white;
+  text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black,
+    2px 2px black, 2px -2px black, -2px 2px black, -2px -2px black;
+  text-align: center;
+}
+
+.led {
+  background-color: black;
+  color: white;
+  font-family: "Telegrama Raw", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*Screen-size relevant CSS*/
+.cat-container img {
+  width: 80vw;
+  height: 48vw;
+}
+.blackletter {
+  font-size: 10.9375vw;
+}
+.led {
+  font-size: 12.5vw;
+}
+
+@media (min-width: 48em) {
+  .cat-container img {
+    width: 40vw;
+    height: 24vw;
+  }
+  .blackletter {
+    font-size: 5.46875vw;
+  }
+  .led {
+    font-size: 6.25vw;
+  }
+}
+
+@media (min-width: 72em) {
+  .cat-container img {
+    width: 26.666vw;
+    height: 16vw;
+  }
+  .blackletter {
+    font-size: 3.6458333vw;
+  }
+  .led {
+    font-size: 4.1666vw;
+  }
+}
+
+@media (min-width: 96em) {
+  .cat-container img {
+    width: 20vw;
+    height: 12vw;
+  }
+  .blackletter {
+    font-size: 2.734375vw;
+  }
+  .led {
+    font-size: 3.125vw;
+  }
+}
+
+@media (min-width: 120em) {
+  .cat-container img {
+    width: 16vw;
+    height: 9.6vw;
+  }
+  .blackletter {
+    font-size: 2.1875vw;
+  }
+  .led {
+    font-size: 2.5vw;
+  }
+}
